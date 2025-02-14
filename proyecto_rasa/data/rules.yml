@@ -4,19 +4,39 @@ rules:
   - rule: Saludar
     steps:
       - intent: saludar
-      - action: utter_saludar  # Asegúrate de que esto coincida con el nombre en domain.yml
+      - action: utter_saludar
 
   - rule: Despedir
     steps:
       - intent: despedir
       - action: utter_despedir
 
-  - rule: Agradecer
+  - rule: Responder estado ánimo positivo
     steps:
-      - intent: agradecer
-      - action: utter_agradecimiento
+      - intent: estado_animo_positivo
+      - action: utter_respuesta_positiva
 
-  - rule: Preguntar nombre
+  - rule: Responder estado ánimo negativo
     steps:
-      - intent: preguntar_nombre
-      - action: utter_nombre
+      - intent: estado_animo_negativo
+      - action: utter_respuesta_negativa
+
+  - rule: Responder a broma
+    steps:
+      - intent: bromear
+      - action: utter_bromear
+
+  - rule: Mantener conversación experiencia positiva
+    steps:
+      - intent: contar_experiencia_positiva
+      - action: utter_mantener_conversacion
+
+  - rule: Mantener conversación experiencia negativa
+    steps:
+      - intent: contar_experiencia_negativa
+      - action: utter_mantener_conversacion
+
+  - rule: Cambiar tema cuando sea necesario
+    steps:
+      - intent: cambiar_tema
+      - action: utter_cambiar_tema
