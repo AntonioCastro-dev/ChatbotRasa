@@ -1,26 +1,68 @@
 version: "3.1"
 
 stories:
-- story: saludo feliz
+- story: saludo y conversación positiva
   steps:
     - intent: saludar
     - action: utter_saludar
-    - intent: agradecer
-    - action: utter_agradecimiento
-
-- story: despedida
-  steps:
+    - intent: estado_animo_positivo
+    - action: utter_respuesta_positiva
+    - intent: contar_experiencia_positiva
+    - action: utter_mantener_conversacion
     - intent: despedir
     - action: utter_despedir
 
-- story: preguntar nombre
-  steps:
-    - intent: preguntar_nombre
-    - action: utter_nombre
-
-- story: saludo y despedida
+- story: saludo y conversación negativa
   steps:
     - intent: saludar
     - action: utter_saludar
+    - intent: estado_animo_negativo
+    - action: utter_respuesta_negativa
+    - intent: contar_experiencia_negativa
+    - action: utter_mantener_conversacion
+    - intent: cambiar_tema
+    - action: utter_cambiar_tema
+
+- story: bromear y mantener conversación
+  steps:
+    - intent: bromear
+    - action: utter_bromear
+    - intent: estado_animo_positivo
+    - action: utter_respuesta_positiva
+    - intent: contar_experiencia_positiva
+    - action: utter_mantener_conversacion
+
+- story: experiencia negativa a positiva
+  steps:
+    - intent: estado_animo_negativo
+    - action: utter_respuesta_negativa
+    - intent: contar_experiencia_negativa
+    - action: utter_mantener_conversacion
+    - intent: estado_animo_positivo
+    - action: utter_respuesta_positiva
+
+- story: conversación con bromas
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: bromear
+    - action: utter_bromear
+    - intent: contar_experiencia_positiva
+    - action: utter_mantener_conversacion
+    - intent: despedir
+    - action: utter_despedir
+
+- story: conversación compleja
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: estado_animo_negativo
+    - action: utter_respuesta_negativa
+    - intent: contar_experiencia_negativa
+    - action: utter_mantener_conversacion
+    - intent: bromear
+    - action: utter_bromear
+    - intent: estado_animo_positivo
+    - action: utter_respuesta_positiva
     - intent: despedir
     - action: utter_despedir
