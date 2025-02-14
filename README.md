@@ -78,18 +78,3 @@ responses:
   utter_despedir:
     - text: "¡Hasta luego!"
 ```
-
-## Contribución
-Si deseas contribuir a este proyecto, puedes:
-1. Hacer un fork del repositorio.
-2. Crear una nueva rama (`git checkout -b nueva-funcionalidad`).
-3. Hacer cambios y confirmarlos (`git commit -m 'Añadir nueva funcionalidad'`).
-4. Subir la rama (`git push origin nueva-funcionalidad`).
-5. Crear un Pull Request.
-
-## Licencia
-Este proyecto se distribuye bajo la licencia MIT. ¡Siéntete libre de usarlo y mejorarlo!
-
-## Contacto
-Para cualquier duda o sugerencia, contáctame en [tu correo o redes sociales].
-
