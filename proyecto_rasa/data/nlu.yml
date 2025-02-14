@@ -1,6 +1,76 @@
 version: "3.1"
-
 nlu:
+  - intent: estado_animo_positivo
+    examples: |
+      - estoy super feliz
+      - todo va genial
+      - me siento de maravilla
+      - hoy es un día estupendo
+      - estoy que no quepo en mí de gozo
+      - las cosas van muy bien
+      - estoy contentísimo
+      - me siento mejor que nunca
+      - todo está saliendo a pedir de boca
+      - estoy radiante de felicidad
+      - tengo mucha energía positiva
+      - me siento bendecido
+      - la vida me sonríe
+      - estoy en una nube
+      - no podría estar mejor
+
+  - intent: estado_animo_negativo
+    examples: |
+      - estoy bastante triste
+      - me siento fatal
+      - todo va mal
+      - no puedo más
+      - estoy agobiado
+      - me siento muy solo
+      - nada me sale bien
+      - estoy pasando por un mal momento
+      - la vida es difícil
+      - me siento hundido
+      - estoy desesperado
+      - todo es un desastre
+      - no veo la luz al final del túnel
+      - necesito ayuda
+      - no sé qué hacer
+
+  - intent: contar_experiencia_positiva
+    examples: |
+      - no te vas a creer lo que me pasó
+      - tuve un día increíble
+      - me ha pasado algo maravilloso
+      - tengo una noticia genial
+      - acabo de vivir algo único
+      - he tenido una experiencia increíble
+      - me ha sucedido algo extraordinario
+      - he vivido un momento mágico
+      - ha sido una experiencia inolvidable
+      - tengo que contarte algo fantástico
+      - me acaba de pasar algo buenísimo
+      - he tenido una suerte increíble
+      - ha sido un día perfecto
+      - todo salió mejor de lo esperado
+      - ha sido una experiencia única
+
+  - intent: contar_experiencia_negativa
+    examples: |
+      - he tenido un día horrible
+      - me ha pasado algo terrible
+      - todo salió mal
+      - ha sido un desastre
+      - tuve una mala experiencia
+      - no me lo podía creer cuando pasó
+      - fue un momento muy difícil
+      - ha sido un día para olvidar
+      - nada salió como esperaba
+      - tuve muy mala suerte
+      - ha sido una pesadilla
+      - todo se complicó
+      - fue un momento muy duro
+      - no pudo ir peor
+      - ha sido un día terrible
   - intent: saludar
     examples: |
       - hola
@@ -16,42 +86,52 @@ nlu:
     examples: |
       - adiós
       - hasta luego
-      - chao
       - nos vemos
       - hasta pronto
-      - bye
-      - me voy
-
-  - intent: agradecer
-    examples: |
       - gracias
-      - muchas gracias
-      - te lo agradezco
-      - muy amable
-      - gracias por tu ayuda
-
-  - intent: preguntar_nombre
+      - adiós amiga
+      - adiós amigo
+      - chao
+  
+  - intent: bromear
     examples: |
-      - ¿cómo te llamas?
-      - ¿cuál es tu nombre?
-      - ¿quién eres?
-      - dime tu nombre
-      - ¿con quién hablo?
-
-  - intent: afirmar
+      - estoy bromeando
+      - me siento bromeando
+      - tengo una broma
+      - estoy en una broma
+      - tengo un chiste
+      - estoy en un chiste
+      - tengo un chiste para ti
+      - tengo una broma para ti
+  
+  - intent: preguntar_si_esta_contento
     examples: |
-      - sí
-      - claro
-      - por supuesto
-      - correcto
-      - exacto
-      - así es
+      - ¿estás contento?
+      - ¿estás feliz?
+      - ¿te sientes bien?
+      - ¿estás de buen humor?
+      - ¿estás alegre?
+      - ¿estás emocionado?
+      - ¿estás radiante?
+      - ¿estás de enhorabuena?
 
-  - intent: negar
+  - intent: preguntar_si_esta_triste
     examples: |
-      - no
-      - para nada
-      - nunca
-      - jamás
-      - negativo
-      - incorrecto
+      - ¿estás triste?
+      - ¿estás deprimido?
+      - ¿te sientes mal?
+      - ¿estás de mal humor?
+      - ¿estás decaído?
+      - ¿estás desanimado?
+      - ¿estás hundido?
+
+  - intent: preguntar_si_esta_aburrido
+    examples: |
+      - ¿estás aburrido?
+      - ¿estás enojado?
+      - ¿estás enojado por algo?
+      - ¿estás enojado con algo?
+      - ¿estás enojado por lo que haces?
+      - ¿estás enojado por lo que pasas?
+
+  
