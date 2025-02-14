@@ -7,13 +7,89 @@ intents:
   - negar
   - agradecer
   - preguntar_nombre
+  - estado_animo_positivo
+  - estado_animo_negativo
+  - estado_animo_neutro
+  - contar_experiencia_positiva
+  - contar_experiencia_negativa
+  - contar_planes
+  - preguntar_opinion
+  - compartir_gusto
+  - hacer_pregunta_personal
+  - responder_pregunta
+  - mostrar_empatia
+  - cambiar_tema
+  - bromear
+  - contar_anecdota
+  - expresar_duda
+  - expresar_acuerdo
+  - expresar_desacuerdo
+  - pedir_consejo
+  - dar_opinion
 
 responses:
-  utter_saludar:  # Cambiado de utter_greet a utter_saludar para mantener consistencia en español
-    - text: "¡Hola! ¿En qué puedo ayudarte?"
-    - text: "¡Buen día! ¿Qué necesitas?"
-    - text: "¡Hola! Estoy aquí para ayudarte"
+  utter_saludar:
+    - text: "¡Hey! ¿Qué tal va todo por aquí?"
+    - text: "¡Qué alegría verte! ¿Cómo te va?"
+    - text: "¡Hola! ¿Qué me cuentas de nuevo?"
+    - text: "¡Cuánto tiempo! ¿Cómo te van las cosas?"
+    - text: "¡Hola! Me alegro de charlar contigo. ¿Qué tal estás?"
+    - text: "¡Ey! ¿Qué tal marcha el día?"
+    - text: "¡Hola! Espero que estés teniendo un buen día. ¿Qué tal?"
 
+  utter_respuesta_positiva:
+    - text: "¡Eso es genial! Me alegro mucho de que las cosas vayan bien"
+    - text: "¡Qué bueno oír eso! Cuéntame más"
+    - text: "¡Me encanta oír buenas noticias! ¿Qué más cosas buenas han pasado?"
+    - text: "¡Fantástico! Se nota que estás de buen humor"
+    - text: "¡Esas son excelentes noticias! ¿Siempre sueles ser tan optimista?"
+    - text: "¡Qué bien! Me contagias tu energía positiva"
+    - text: "¡Estupendo! Se nota que las cosas van por buen camino"
+
+  utter_respuesta_negativa:
+    - text: "Vaya, lo siento mucho. ¿Quieres hablar sobre ello?"
+    - text: "Entiendo cómo te sientes. A veces las cosas no son fáciles"
+    - text: "Siento que estés pasando por esto. ¿Hay algo que pueda hacer?"
+    - text: "No debe ser fácil. Estoy aquí para escucharte si lo necesitas"
+    - text: "A veces simplemente necesitamos desahogarnos. Te escucho"
+    - text: "Es normal sentirse así. ¿Qué crees que podría ayudarte a sentirte mejor?"
+    - text: "Los momentos difíciles también pasan. ¿Quieres compartir más?"
+
+  utter_respuesta_neutral:
+    - text: "Entiendo. ¿Hay algo en particular que te gustaría compartir?"
+    - text: "A veces los días son así. ¿Tienes planes para más tarde?"
+    - text: "Ya veo. ¿Hay algo que te ayudaría a mejorar el día?"
+    - text: "Comprendo. ¿Qué sueles hacer en días como hoy?"
+    - text: "¿Y qué te gustaría que fuera diferente?"
+    - text: "¿Hay algo específico que te preocupe?"
+    - text: "¿Quieres contarme más sobre eso?"
+
+  utter_mantener_conversacion:
+    - text: "¡Qué interesante! Y dime, ¿siempre ha sido así?"
+    - text: "¡No me digas! ¿Y cómo te sentiste en ese momento?"
+    - text: "¡Vaya! ¿Y qué pasó después?"
+    - text: "¡Qué curioso! ¿Habías vivido algo similar antes?"
+    - text: "¡Eso suena fascinante! ¿Cómo llegaste a esa situación?"
+    - text: "¡Me intriga eso que cuentas! ¿Podrías darme más detalles?"
+    - text: "¡Qué historia más interesante! ¿Y cómo acabó todo?"
+
+  utter_bromear:
+    - text: "¡Eso me ha hecho sonreír! Tienes buen sentido del humor"
+    - text: "¡Jaja! Se nota que sabes cómo animar una conversación"
+    - text: "¡Muy bueno! Me encantan las personas que saben hacer reír"
+    - text: "¡Esa ha sido buena! ¿Siempre eres así de divertido?"
+    - text: "¡Me has hecho reír! Necesitaba algo de humor hoy"
+    - text: "¡Qué gracioso! Me gusta tu manera de ver las cosas"
+    - text: "¡Jaja! ¡Eres todo un personaje!"
+
+  utter_cambiar_tema:
+    - text: "Por cierto, ¿has descubierto algo nuevo últimamente que te haya llamado la atención?"
+    - text: "Cambiando de tema, ¿qué es lo último que te ha sorprendido gratamente?"
+    - text: "Y hablando de otras cosas, ¿qué te inspira últimamente?"
+    - text: "Me da curiosidad, ¿qué es lo que más te emociona hacer?"
+    - text: "¿Sabes qué me preguntaba? ¿Qué te hace perder la noción del tiempo?"
+    - text: "Y ya que sale el tema, ¿qué es lo último que has aprendido?"
+    - text: "Por cierto, ¿qué es lo que más te motiva últimamente?"
   utter_despedir:
     - text: "¡Hasta luego! Que tengas un buen día"
     - text: "¡Adiós! Vuelve pronto"
@@ -29,7 +105,3 @@ responses:
 
   utter_default:
     - text: "Lo siento, no entendí eso. ¿Podrías reformularlo?"
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
