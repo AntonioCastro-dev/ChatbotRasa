@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+  - rule: Saludar
+    steps:
+      - intent: saludar
+      - action: utter_saludar  # Asegúrate de que esto coincida con el nombre en domain.yml
+
+  - rule: Despedir
+    steps:
+      - intent: despedir
+      - action: utter_despedir
+
+  - rule: Agradecer
+    steps:
+      - intent: agradecer
+      - action: utter_agradecimiento
+
+  - rule: Preguntar nombre
+    steps:
+      - intent: preguntar_nombre
+      - action: utter_nombre

@@ -1,0 +1,35 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - despedir
+  - afirmar
+  - negar
+  - agradecer
+  - preguntar_nombre
+
+responses:
+  utter_saludar:  # Cambiado de utter_greet a utter_saludar para mantener consistencia en español
+    - text: "¡Hola! ¿En qué puedo ayudarte?"
+    - text: "¡Buen día! ¿Qué necesitas?"
+    - text: "¡Hola! Estoy aquí para ayudarte"
+
+  utter_despedir:
+    - text: "¡Hasta luego! Que tengas un buen día"
+    - text: "¡Adiós! Vuelve pronto"
+    - text: "¡Nos vemos! Cuídate"
+
+  utter_agradecimiento:
+    - text: "¡De nada! Estoy para ayudar"
+    - text: "Es un placer poder ayudarte"
+
+  utter_nombre:
+    - text: "Me llamo RasaBot, soy un asistente virtual"
+    - text: "Puedes llamarme RasaBot"
+
+  utter_default:
+    - text: "Lo siento, no entendí eso. ¿Podrías reformularlo?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

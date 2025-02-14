@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+- story: saludo feliz
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: agradecer
+    - action: utter_agradecimiento
+
+- story: despedida
+  steps:
+    - intent: despedir
+    - action: utter_despedir
+
+- story: preguntar nombre
+  steps:
+    - intent: preguntar_nombre
+    - action: utter_nombre
+
+- story: saludo y despedida
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: despedir
+    - action: utter_despedir

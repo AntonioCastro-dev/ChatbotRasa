@@ -1,0 +1,57 @@
+version: "3.1"
+
+nlu:
+  - intent: saludar
+    examples: |
+      - hola
+      - buenos días
+      - buenas tardes
+      - buenas noches
+      - qué tal
+      - hey
+      - saludos
+      - ¿cómo estás?
+
+  - intent: despedir
+    examples: |
+      - adiós
+      - hasta luego
+      - chao
+      - nos vemos
+      - hasta pronto
+      - bye
+      - me voy
+
+  - intent: agradecer
+    examples: |
+      - gracias
+      - muchas gracias
+      - te lo agradezco
+      - muy amable
+      - gracias por tu ayuda
+
+  - intent: preguntar_nombre
+    examples: |
+      - ¿cómo te llamas?
+      - ¿cuál es tu nombre?
+      - ¿quién eres?
+      - dime tu nombre
+      - ¿con quién hablo?
+
+  - intent: afirmar
+    examples: |
+      - sí
+      - claro
+      - por supuesto
+      - correcto
+      - exacto
+      - así es
+
+  - intent: negar
+    examples: |
+      - no
+      - para nada
+      - nunca
+      - jamás
+      - negativo
+      - incorrecto
